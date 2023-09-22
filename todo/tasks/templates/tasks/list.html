@@ -59,7 +59,7 @@
             <button type="submit" class="btn btn-primary m-2">Search</button>
         </form>
         <hr>
-        <div class = "m-1"style="text-align: center;"><a  style="text-decoration: none; color: brown;;" href="{% url 'clear_all' %}"><b>Clear All Tasks</b></a>
+        <div class = "m-1"style="text-align: center;"><a  style="text-decoration: none; color: brown;" onclick="return confirm('Are you sure you want to Clear All Tasks?')" href="{% url 'clear_all' %}"><b>Clear All Tasks</b></a>
             <hr>
         </div>
         {% for task in tasks %}
